@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@progress/kendo-react-buttons";
 import kendoka from "../assets/kendoka.svg";
 import Image from "next/image";
+import Calculator from "../components/Calculator";
 
 export default function Home() {
   const handleClick = React.useCallback(() => {
@@ -18,6 +19,7 @@ export default function Home() {
         <Button themeColor={"primary"} size={"large"} onClick={handleClick}>
           Learn KendoReact
         </Button>
+        <Calculator />
       </header>
     </div>
   );
