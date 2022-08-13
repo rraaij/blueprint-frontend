@@ -11,16 +11,16 @@ export default function Home() {
 
   return (
     <div className="container p-5">
-      <header className="flex flex-col justify-content-center">
+      <div className="flex flex-col justify-center items-center space-y-2">
         <Image src={kendoka} className="App-logo" alt="kendoka" />
-        <h1 className="text-3xl font-bold underline pb-5">
+        <h1 className="shrink grow-0 self-center text-3xl font-bold underline pb-5">
           Edit <code>src/App.tsx</code> and save to reload.
         </h1>
         <Button themeColor={"primary"} size={"large"} onClick={handleClick}>
           Learn KendoReact
         </Button>
         <Calculator />
-      </header>
+      </div>
     </div>
   );
 }
