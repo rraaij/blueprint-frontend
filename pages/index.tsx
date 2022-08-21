@@ -10,7 +10,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container p-5">
+    <div className="container p-5 h-full">
       <div className="flex flex-col justify-center items-center space-y-2">
         <Image src={kendoka} className="App-logo" alt="kendoka" />
         <h1 className="shrink grow-0 self-center text-3xl font-bold underline pb-5">

@@ -43,11 +43,13 @@ const Calculator = () => {
   return (
     <>
       <TemperatureInput
+        id={"111"}
         scale="c"
         temperature={celsius}
         onTemperatureChange={handleCelsiusChange}
       />
       <TemperatureInput
+        id={"222"}
         scale="f"
         temperature={fahrenheit}
         onTemperatureChange={handleFahrenheitChange}

@@ -1,6 +1,6 @@
-import { Input } from "@progress/kendo-react-inputs";
 import { FieldWrapper } from "@progress/kendo-react-form";
 import { Label } from "@progress/kendo-react-labels";
+import { Input } from "@progress/kendo-react-inputs";
 
 const scaleNames = {
   c: "Celsius",
@@ -16,6 +16,7 @@ const TemperatureInput = (props) => {
     <FieldWrapper>
       <Label>Enter temperature in {scaleNames[props.scale]}:</Label>
       <Input
+        id={props.id}
         type={"number"}
         value={props.temperature}
         onChange={handleChange}
